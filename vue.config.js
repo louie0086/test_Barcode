@@ -7,7 +7,7 @@ function resolve(dir) {
 }
 
 module.exports = {
-  productionSourceMap: false,
+  // productionSourceMap: false,
   lintOnSave: false,
   configureWebpack: {
     module: {
