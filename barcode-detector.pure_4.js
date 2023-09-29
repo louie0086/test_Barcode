@@ -440,7 +440,7 @@ var BarcodeDetectionAPI = (function (R) {
         ge
       function we() {
         var t = K.buffer;
-        console.log('K.buffer.byteLength',K.buffer.length)
+        console.log('K.buffer.byteLength',K.buffer && K.buffer.byteLength)
         ;(u.HEAP8 = J = new Int8Array(t)),
           (u.HEAP16 = yt = new Int16Array(t)),
           (u.HEAPU8 = B = new Uint8Array(t)),
