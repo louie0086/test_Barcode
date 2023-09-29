@@ -561,6 +561,9 @@ var BarcodeDetectionAPI = (function (R) {
       function Ur() {
         var t = { a: $a }
         function e(n, a) {
+          console.log('n:',n)
+          console.log('n.exports: ',n.exports)
+          console.log('n.exports.qa',n.exports.qa)
           return (
             (D = n.exports), (K = D.qa), we(), (ke = D.ua), jr(D.ra), Hr(), D
           )
