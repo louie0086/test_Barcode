@@ -2,7 +2,8 @@
   <div id="app">
     <div class="m-body">
       <h1>test barcode detector</h1>
-      <button @click="$router.push('/qrscan')">start qr scan</button>
+      <button class="btn" @click="$router.push('/qrscan')">start qr scan</button>
+      <button class="btn" @click="$router.push('/')">back</button>
       <router-view  />
     </div>
 
@@ -36,5 +37,9 @@ export default ({
     bottom: 0;
     overflow: auto;
     -webkit-overflow-scrolling: auto
+}
+.btn{
+position: relative;
+z-index: 100;
 }
 </style>

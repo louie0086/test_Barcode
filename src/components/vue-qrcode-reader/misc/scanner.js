@@ -1,7 +1,7 @@
 import { eventOn } from './callforth'
 import { DropImageFetchError } from './errors'
 
-const {BarcodeDetector,setZXingModuleOverrides} = require("barcode-detector/dist/cjs/pure");
+// const {BarcodeDetector,setZXingModuleOverrides} = require("barcode-detector/dist/cjs/pure");
 
 
 let barcodeDetector
@@ -32,8 +32,8 @@ export const keepScanning = async (
   //   },
   // });
 
-  barcodeDetector = new BarcodeDetector({ formats })
-  // barcodeDetector = new BarcodeDetectionAPI.BarcodeDetector({ formats })
+  // barcodeDetector = new BarcodeDetector({ formats })
+  barcodeDetector = new BarcodeDetectionAPI.BarcodeDetector({ formats })
   
   const processFrame =
     (state) =>

@@ -26,6 +26,8 @@ methods:{
   async onDetect(detectedCodes) {
     this.result = JSON.stringify(detectedCodes)
     console.log('result',detectedCodes)
+
+    setTimeout(() => this.$router.push('/'),5000)
     
   },
   paintCenterText(detectedCodes, ctx) {
@@ -59,7 +61,8 @@ mounted(){
 <style scoped>
 .hx1{
 width: 100%;
-height: 100vh;
+margin-top: 80px;
+height: 60vh;
 background: #f00;
 }
 </style>
